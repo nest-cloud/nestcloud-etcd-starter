@@ -331,129 +331,94 @@
     underscore "^1.9.1"
     ws "^6.1.0"
 
-"@nestcloud/boot@^0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@nestcloud/boot/-/boot-0.5.3.tgz#c21d0b9e8eef2d7514a743f566c5ed4be530a972"
-  integrity sha512-o3U5n/+QVeWr3ydLXbl9mHosEzxXfhfhwvAFixryVKNsys8vjqHf6AOTsbA3SL+NxGAaLcSZC6eQgyf649iF3Q==
+"@nestcloud/boot@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/boot/-/boot-0.6.0.tgz#46e08c7bdcb0b8e59da3c65e2d25dff861e25b34"
+  integrity sha512-tuePU7LSb7y6rPWY0e9XVqU/Der7d1l+DT9JCxUmdcU7gpopis16FHqr0ElogWdBfW7dXN/Bq2qZHLcrk6hW4w==
   dependencies:
     handlebars "^4.1.1"
     lodash "^4.17.11"
     reflect-metadata "^0.1.12"
     yamljs "^0.3.0"
 
-"@nestcloud/boot@^0.6.0-y.1":
-  version "0.6.0-y.1"
-  resolved "https://registry.yarnpkg.com/@nestcloud/boot/-/boot-0.6.0-y.1.tgz#4aead3b59d87e41151b37919a8f24b083e0fd19c"
-  integrity sha512-wbE94Kk0Moe1Ucl2TXQfbpr3j4nXpQQMeFwtLpXyOSFqW3dgE2Upb6y7IBOSHAzKpx7K6IxAqp33XofD8mvR0Q==
-  dependencies:
-    handlebars "^4.1.1"
-    lodash "^4.17.11"
-    reflect-metadata "^0.1.12"
-    yamljs "^0.3.0"
+"@nestcloud/brakes@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/brakes/-/brakes-0.6.0.tgz#63ea95fb515c19cdc26b8fc39df173a9c9959775"
+  integrity sha512-Ssap7yEXHqCsVJ7Mo7EQNSuEfD27eh8EFlzc28FzGW38RtdTcMy2IaAANrtIIjXpOVdOcV3gIge5t6GRds06lQ==
 
-"@nestcloud/brakes@^0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@nestcloud/brakes/-/brakes-0.5.3.tgz#a318bf4fa5b4955e2ef390f487d796fb092ffab9"
-  integrity sha512-v008gUW27Yj/HPsrSRuxWLp50KyB6Hfy4HM07mJa0tQcHif7/BBQjeySPoaF/pkYX7gVofNWcRbCMq/0dt6p2w==
-
-"@nestcloud/common@^0.6.0-y.1":
-  version "0.6.0-y.1"
-  resolved "https://registry.yarnpkg.com/@nestcloud/common/-/common-0.6.0-y.1.tgz#d1b4f75209abeef7872386afa52f902b082332e6"
-  integrity sha512-hBBbgvpJh2SmoHR1QwyB/Oqd922SbCjmcglT7gN/169o1hPeQDgWyZMrGzqA21iCcZTpUr6gA4mrRuutrMcRKA==
+"@nestcloud/common@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/common/-/common-0.6.0.tgz#0f41a409f14b229482d799268f12750caae47810"
+  integrity sha512-Cn4Oi5pLzTPdB01qB7WtJGQON8EKvdRPceMi7gVHHqEAr+sodScmkxgcimliyN6J8qoHddvfOw1XajUdD/yq3w==
   dependencies:
     kubernetes-client "^8.3.3"
     lodash "^4.17.11"
 
-"@nestcloud/config@^0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@nestcloud/config/-/config-0.5.3.tgz#bd31bd2aeda38935762125204f9c8a8f579d13b3"
-  integrity sha512-maqzYnRn02UDBWdCKTwckSHp0SeUS9TQKhs17XmO6IkOnx9qJTbJ0rvFJQTBPxAJyZtS3fYpKVXcIlvACOexsA==
-  dependencies:
-    lodash "^4.17.11"
-    reflect-metadata "^0.1.12"
-    yamljs "^0.3.0"
-  optionalDependencies:
-    "@nestcloud/boot" "^0.5.3"
-    "@nestcloud/consul" "^0.5.3"
-    consul "^0.30.0"
-
-"@nestcloud/config@^0.6.0-y.1":
-  version "0.6.0-y.1"
-  resolved "https://registry.yarnpkg.com/@nestcloud/config/-/config-0.6.0-y.1.tgz#88a4757866b14e27c9bfb40051fdf5fd83b463c5"
-  integrity sha512-Ncpd0XulHWHNn9gvEWgnscOXxWcfJt2VAVoKVvemaD/H2fIXJUPe35fE98+9UFLGxkgq1nOQzUiuSFixrcSxQQ==
+"@nestcloud/config@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/config/-/config-0.6.0.tgz#1000c8c9f7255cb30eaa05387e8754be4badd251"
+  integrity sha512-DkxOkrRTDt33WwKoZmPz6UqGRx2NgFr97y0X32++mACuQCCO+62sZ76NHA/2cZUWZcc9lckdS6Y9FvDb8K/OwA==
   dependencies:
     etcd3 "^0.2.13"
     lodash "^4.17.11"
     reflect-metadata "^0.1.12"
     yamljs "^0.3.0"
   optionalDependencies:
-    "@nestcloud/boot" "^0.5.3"
-    "@nestcloud/consul" "^0.5.3"
+    "@nestcloud/boot" "^0.6.0"
+    "@nestcloud/consul" "^0.6.0"
     consul "^0.30.0"
 
-"@nestcloud/consul@^0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@nestcloud/consul/-/consul-0.5.3.tgz#35edf0ccc9e53eb28879f0424b49868485368830"
-  integrity sha512-gQK/1lXQ7N5UoKGD90DHddvWtrgvx4njnFZAe/ltsVVqIWGQyAKlmOujV/E1NjIfeur+qYomB5Gwiafmoakh3A==
+"@nestcloud/consul@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/consul/-/consul-0.6.0.tgz#f75d92a91b9e1c5b9cc0574938b90850b9a1b827"
+  integrity sha512-aqUJTa4i9VP/fZjzyC8EhpOUMz7yvSVlLsYRyiXRLPpD9DqMI0Xie7qGjjmDXRX34I+SDrA1vWoLxpeCGtzIug==
   dependencies:
     reflect-metadata "^0.1.13"
     yamljs "^0.3.0"
   optionalDependencies:
-    "@nestcloud/boot" "^0.5.3"
+    "@nestcloud/boot" "^0.6.0"
 
-"@nestcloud/core@^0.6.0-y.1":
-  version "0.6.0-y.1"
-  resolved "https://registry.yarnpkg.com/@nestcloud/core/-/core-0.6.0-y.1.tgz#093c7a5e3ee48f3586090a22bd45d7ec7041870d"
-  integrity sha512-tmfvGOpbGptFgZIKr0UcS63aiNw+p7vPFGxZWxqFGTwIBONWWtinPm9niZaF/3D84ggGA5e3GWDR5++7a9TBIQ==
+"@nestcloud/core@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/core/-/core-0.6.0.tgz#a99987db0039e3f901388cc1c417ad69147087e7"
+  integrity sha512-rtakzyZLcqRg2FqhKA0P59gqdKYfxpmIvzMMGVdG/S1wm+RHP3OZCwlnSh6nOe4DYci3jj/mLBrEJDqMm47Yqg==
 
-"@nestcloud/etcd@^0.6.0-y.1":
-  version "0.6.0-y.1"
-  resolved "https://registry.yarnpkg.com/@nestcloud/etcd/-/etcd-0.6.0-y.1.tgz#cdd5014122f1e6a7edd9c625266d4a1309ef4bd0"
-  integrity sha512-hnrjZcrzI24m/91bqd2fO/c9Biz/BSzW2sT97nv53qAjY9B46DY394K7MnARdrLeUKGXhwqqfi1b2+PUeMovrA==
+"@nestcloud/etcd@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/etcd/-/etcd-0.6.0.tgz#488e1aedb4bcbbc27ead4d29e9f908f5e90ffb02"
+  integrity sha512-EXZ3VlVNpz0Bghcdv+IIjWtn4ZcrRkqJI1QueXMDZyCV6JmPLc4KVLmXcVX1DIOMLns+y5CBCpVRTfCQ4p/5zg==
 
-"@nestcloud/feign@^0.6.0-y.1":
-  version "0.6.0-y.1"
-  resolved "https://registry.yarnpkg.com/@nestcloud/feign/-/feign-0.6.0-y.1.tgz#bdc11657147df7ef6a9a3a4a839837e2ad051460"
-  integrity sha512-lR4/lxeVM+LTYLTf+8frrp5fCv8iWArPjoO/N9Ll0RtYfrbiasJnZnt0lHzFOngAPmcvxBqT2e1n/epUvQVb0g==
+"@nestcloud/feign@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/feign/-/feign-0.6.0.tgz#ac2aa580534129606f48071ea7431f5565d5b2c2"
+  integrity sha512-p0q7SM/4+rCQnc0m5E7zjjlfkJBX06cCVBgOMnEmfqYhQx3YqyJSV4NI6qFHHsH8gmrigj+9OgVeFues835Jgg==
   dependencies:
     lodash "^4.17.11"
     reflect-metadata "^0.1.12"
     uri-params "^0.1.3"
     uuid "^3.3.2"
   optionalDependencies:
-    "@nestcloud/boot" "^0.5.3"
-    "@nestcloud/brakes" "^0.5.3"
-    "@nestcloud/config" "^0.5.3"
-    "@nestcloud/loadbalance" "^0.5.3"
+    "@nestcloud/boot" "^0.6.0"
+    "@nestcloud/brakes" "^0.6.0"
+    "@nestcloud/config" "^0.6.0"
+    "@nestcloud/loadbalance" "^0.6.0"
 
-"@nestcloud/loadbalance@^0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@nestcloud/loadbalance/-/loadbalance-0.5.3.tgz#36bd99cfc9276b6be151bc1cd47b55149bade5b3"
-  integrity sha512-EP3rQc/n9amx0VcPLG+9YQS2V47majhzv8chmN6nYgPlpCI7La96D3GxjJv9HRi+tjoQ8hfxiITFQAFjDYwekQ==
+"@nestcloud/loadbalance@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/loadbalance/-/loadbalance-0.6.0.tgz#9755b323e63c9109410f7c1403188c6cc6d4dc21"
+  integrity sha512-PjA3TSw4aq7XZdi83lEJ4o76ImHPQy/eNsdKwAM/g2wVD3+JnXVB6DMg1feFuo+JOkPXqP0wbyDFxZGaa+Wcnw==
   dependencies:
     axios "^0.18.0"
     lodash "^4.17.11"
     random-js "^2.0.0-rc2"
   optionalDependencies:
-    "@nestcloud/boot" "^0.5.3"
-    "@nestcloud/config" "^0.5.3"
+    "@nestcloud/boot" "^0.6.0"
+    "@nestcloud/config" "^0.6.0"
 
-"@nestcloud/loadbalance@^0.6.0-y.1":
-  version "0.6.0-y.1"
-  resolved "https://registry.yarnpkg.com/@nestcloud/loadbalance/-/loadbalance-0.6.0-y.1.tgz#965d309d9d5b31c73d31a1e3bc88657007c26f09"
-  integrity sha512-uK6h5NkgUUC+dRpHNUVDD+lu9FG0PCh/nJX4ss7hQhcVjRmSDe6jhlGqLCFzoJxnoJ8MkgP2TGa7Qg4sGmZyww==
-  dependencies:
-    axios "^0.18.0"
-    lodash "^4.17.11"
-    random-js "^2.0.0-rc2"
-  optionalDependencies:
-    "@nestcloud/boot" "^0.5.3"
-    "@nestcloud/config" "^0.5.3"
-
-"@nestcloud/logger@^0.6.0-y.1":
-  version "0.6.0-y.1"
-  resolved "https://registry.yarnpkg.com/@nestcloud/logger/-/logger-0.6.0-y.1.tgz#7e5f4b74113a2cd7c31b6537f009dd75ec67e842"
-  integrity sha512-uTKEfNHJsRCmRLiFdqApR1jfMnXQSUx8r68b9RrYeF5UJLpH03IM8OvswfpuKpMKPQq60U7OdFBn/lw6qnxw0A==
+"@nestcloud/logger@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/logger/-/logger-0.6.0.tgz#341ff3ee813d65f90d6b9e28871ecd1642fef8ce"
+  integrity sha512-GuTwi2TjzEY2aDjPu5Ms6qp4kurUMqgydYv1SN4W2bUNEPOyxx44E/1aRttgOLeMn77Zf219wghMDM2aKu4L/w==
   dependencies:
     mkdirp "^0.5.1"
     moment "^2.24.0"
@@ -461,50 +426,50 @@
     winston "^2.4.2"
     winston-daily-rotate-file "^3.8.0"
 
-"@nestcloud/proxy@^0.6.0-y.1":
-  version "0.6.0-y.1"
-  resolved "https://registry.yarnpkg.com/@nestcloud/proxy/-/proxy-0.6.0-y.1.tgz#a9f30ebee61244152d850bd133484c502ae6c388"
-  integrity sha512-LwSIjWJnxooBd7Hi8hexPs0WNZkQapebB2g0HXUq+jmLTlNV89rxGZkpJ6bSNyaKWA8N3asTO3BfiaAHFBW+pg==
+"@nestcloud/proxy@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/proxy/-/proxy-0.6.0.tgz#ca428394fbcc80c05abb7e373a17e749c9c8a29d"
+  integrity sha512-B8cwdxce4Zd3bFhSkrxdhrzhrNAiCsjOyci1Q93tai5N3uUQILtZ8NUtkt3+vLCwwkkSz3pVLa+Gb1kwoI2Fow==
   dependencies:
     http-proxy "^1.17.0"
     ratelimiter "^3.3.0"
   optionalDependencies:
-    "@nestcloud/boot" "^0.5.3"
-    "@nestcloud/config" "^0.5.3"
-    "@nestcloud/loadbalance" "^0.5.3"
-    "@nestcloud/redis" "^0.5.3"
+    "@nestcloud/boot" "^0.6.0"
+    "@nestcloud/config" "^0.6.0"
+    "@nestcloud/loadbalance" "^0.6.0"
+    "@nestcloud/redis" "^0.6.0"
 
-"@nestcloud/redis@^0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@nestcloud/redis/-/redis-0.5.3.tgz#15fef2f9929042f3e84bbf4710b0654672142c72"
-  integrity sha512-rvb3iR9y70X5OUsPCIjnaKbKf6uhIjlz44c6rMsgjAVrnhlmFbaj2vbU3q7NNhDfDrpCP7R6ZwB83sbRYLgPyw==
+"@nestcloud/redis@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/redis/-/redis-0.6.0.tgz#af5d68b94e5b563f317d587b08305ac89a2abb56"
+  integrity sha512-GY71Q3l5aOpP73Gg+0wTA8/dcsgorCwwljmE79skPdTWVTjCXXZduVSXTOyDkEjdYj1pAXNxMv2GMV/lqnH1FQ==
   optionalDependencies:
-    "@nestcloud/boot" "^0.5.3"
-    "@nestcloud/config" "^0.5.3"
+    "@nestcloud/boot" "^0.6.0"
+    "@nestcloud/config" "^0.6.0"
 
-"@nestcloud/schedule@^0.6.0-y.1":
-  version "0.6.0-y.1"
-  resolved "https://registry.yarnpkg.com/@nestcloud/schedule/-/schedule-0.6.0-y.1.tgz#27f8e2c23bbfa1ecbffd4767b28231cdd9bdfc00"
-  integrity sha512-pCOV7f3aKwtQrBmooBTsONwlmMkYcysukzl4E9FDPJSH2ZlZPF/S+duU87uBr7XfBDmjl0326oP/zZkrJU5L8g==
+"@nestcloud/schedule@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/schedule/-/schedule-0.6.0.tgz#3a8a7881a938c8a41702b0944c6cc3abcb99e069"
+  integrity sha512-PEyAP5zjImxZJHjDBWim/a/OkpsznKP8go3LDjR3IWTD80ZRdIboD3doaDs76n/M8k1Uw8JfAmXcF0ysQhbbfQ==
   dependencies:
     node-schedule "^1.3.0"
     reflect-metadata "^0.1.12"
 
-"@nestcloud/service@^0.6.0-y.1":
-  version "0.6.0-y.1"
-  resolved "https://registry.yarnpkg.com/@nestcloud/service/-/service-0.6.0-y.1.tgz#2e4f7682e2cdf5b3d24dfbc1d584ad7085df04e4"
-  integrity sha512-pkrdRxYZ8noFVliV9q/HMMPpitMekn154lzixQPruZVBO+EO+C4nOikLcBCl4dGWiGgtfe9D1GMl39KfuC0GrA==
+"@nestcloud/service@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/service/-/service-0.6.0.tgz#8cef6d8489990d56f8df2247d5e3889913a376b9"
+  integrity sha512-POZonVnmgU1mdzDX/WPkdljWc+GyV8soJSvA7mo48d3n3GpqAU/ckER7H1tr5dwfd9QNFEplHb0hhhYrL3sh5A==
   dependencies:
     blueimp-md5 "^2.10.0"
     lodash "^4.17.11"
     yamljs "^0.3.0"
   optionalDependencies:
-    "@nestcloud/boot" "^0.5.3"
+    "@nestcloud/boot" "^0.6.0"
 
-"@nestcloud/validations@^0.6.0-y.1":
-  version "0.6.0-y.1"
-  resolved "https://registry.yarnpkg.com/@nestcloud/validations/-/validations-0.6.0-y.1.tgz#5680bff6fc0995113a6717652b8a6afce13bd818"
-  integrity sha512-f2b5md4mw3vBpsEZgpgcW9RoG3ZjExzKULHGCeNM08BMLtr4Vdb9RNCkjdKT4BU21DgiwUwiWpv0EZJiYcECzA==
+"@nestcloud/validations@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestcloud/validations/-/validations-0.6.0.tgz#e368b0c7de86a844f057e8cad8029375cfdb5581"
+  integrity sha512-xWde2CFScBsgxnZjipoyXqnF8zTd++nvVsK6C5g8Km6p32d3GJXuiVYEw1OBNbGo7z2dSsjf44rHND5y4o0UOw==
   dependencies:
     class-transformer "^0.1.9"
     class-validator "^0.8.5"
@@ -1307,11 +1272,6 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bignumber.js@7.2.1:
-  version "7.2.1"
-  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-7.2.1.tgz#80c048759d826800807c4bfd521e50edbba57a5f"
-  integrity sha512-S4XzBk5sMB+Rcb/LNcpzXr57VRTxgAvaAEDAl1AwRx27j00hT84O6OkteE7u8UB3NuaaygCRrEpqox4uDOrbdQ==
-
 bignumber.js@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-5.0.0.tgz#fbce63f09776b3000a83185badcde525daf34833"
@@ -1851,13 +1811,6 @@ consul@^0.30.0:
   integrity sha512-jdpP4iOioWE+OvdPupnrvcNm/h0Vdu4szfcsviTBoUJmdD0PVOsQubRKoub7yQW/pKZYSiGgyMFBnEPZonxEXQ==
   dependencies:
     papi "^0.27.0"
-
-consul@^0.34.1:
-  version "0.34.1"
-  resolved "https://registry.yarnpkg.com/consul/-/consul-0.34.1.tgz#b000638ad99db038fbb98e508c32d758bf598968"
-  integrity sha512-xCLBzPQBgnDgC2LdYnrT/Fc6PglRU6u7EBkpW0ExAx3Am/CdtKcP5o/3jfwOy7PBAwBqnJk3AYdwwGg+arriiQ==
-  dependencies:
-    papi "^0.29.0"
 
 content-disposition@0.5.3:
   version "0.5.3"
@@ -4688,16 +4641,6 @@ multer@1.4.2:
     type-is "^1.6.4"
     xtend "^4.0.0"
 
-mysql@^2.17.1:
-  version "2.17.1"
-  resolved "https://registry.yarnpkg.com/mysql/-/mysql-2.17.1.tgz#62bba4a039a9b2f73638cd1652ce50fc6f682899"
-  integrity sha512-7vMqHQ673SAk5C8fOzTG2LpPcf3bNt0oL3sFpxPEEFp1mdlDcrLK0On7z8ZYKaaHrHwNcQ/MTUz7/oobZ2OyyA==
-  dependencies:
-    bignumber.js "7.2.1"
-    readable-stream "2.3.6"
-    safe-buffer "5.1.2"
-    sqlstring "2.3.1"
-
 mz@^2.4.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/mz/-/mz-2.7.0.tgz#95008057a56cafadc2bc63dde7f9ff6955948e32"
@@ -5216,11 +5159,6 @@ papi@^0.27.0:
   resolved "https://registry.yarnpkg.com/papi/-/papi-0.27.0.tgz#7392a38ebefa7fb67e98b363bca3d136827caf28"
   integrity sha1-c5Kjjr76f7Z+mLNjvKPRNoJ8ryg=
 
-papi@^0.29.0:
-  version "0.29.1"
-  resolved "https://registry.yarnpkg.com/papi/-/papi-0.29.1.tgz#7373e2c527f5117d61fd2a0e6c6b1dd72bf7f180"
-  integrity sha512-Y9ipSMfWuuVFO3zY9PlxOmEg+bQ7CeJ28sa9/a0veYNynLf9fwjR3+3fld5otEy7okUaEOUuCHVH62MyTmACXQ==
-
 parent-require@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/parent-require/-/parent-require-1.0.0.tgz#746a167638083a860b0eef6732cb27ed46c32977"
@@ -5593,7 +5531,7 @@ readable-stream@1.1.x, "readable-stream@1.x >=1.1.9":
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readable-stream@2.3.6, "readable-stream@> 1.0.0 < 3.0.0", readable-stream@^2.0.0, readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.6, readable-stream@^2.1.5, readable-stream@^2.2.2, readable-stream@^2.3.3, readable-stream@^2.3.5, readable-stream@^2.3.6, readable-stream@~2.3.6:
+"readable-stream@> 1.0.0 < 3.0.0", readable-stream@^2.0.0, readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.6, readable-stream@^2.1.5, readable-stream@^2.2.2, readable-stream@^2.3.3, readable-stream@^2.3.5, readable-stream@^2.3.6, readable-stream@~2.3.6:
   version "2.3.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
   integrity sha512-tQtKA9WIAhBF3+VLAseyMqZeBjW0AHJoxOtYqSUZNJxauErmLbVm2FW1y+J/YA9dUrAC39ITejlZWhVIwawkKw==
@@ -6194,11 +6132,6 @@ sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
-
-sqlstring@2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/sqlstring/-/sqlstring-2.3.1.tgz#475393ff9e91479aea62dcaf0ca3d14983a7fb40"
-  integrity sha1-R1OT/56RR5rqYtyvDKPRSYOn+0A=
 
 sshpk@^1.7.0:
   version "1.16.1"
