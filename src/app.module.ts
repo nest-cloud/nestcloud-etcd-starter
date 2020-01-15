@@ -30,7 +30,7 @@ import { LoggerModule } from '@nestcloud/logger';
     ServiceModule.register({ dependencies: [NEST_BOOT, NEST_ETCD] }),
     LoadbalanceModule.register({ dependencies: [NEST_BOOT] }),
     FeignModule.register({ dependencies: [NEST_LOADBALANCE] }),
-    ProxyModule.register({ dependencies: [NEST_BOOT] }),
+    ProxyModule.register({ dependencies: [NEST_BOOT, NEST_LOADBALANCE] }),
     TerminusModule.forRootAsync({
       inject: [],
       useFactory: () => ({ endpoints: [{ url: '/health', healthIndicators: [] }] }),
