@@ -1,11 +1,11 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { NestSchedule, Interval } from '@nestcloud/schedule';
+import { Interval } from '@nestcloud/schedule';
 import { InjectLogger } from '@nestcloud/logger';
 import { BootValue } from '@nestcloud/boot';
 import { ConfigValue } from '@nestcloud/config';
 
 @Injectable()
-export class ScheduleService extends NestSchedule {
+export class ScheduleService {
   @BootValue('custom.data', 'default custom data')
   private readonly customData: string;
 
@@ -17,7 +17,6 @@ export class ScheduleService extends NestSchedule {
   public constructor(
     @InjectLogger() private readonly logger: Logger,
   ) {
-    super();
   }
 
   @Interval(2000)

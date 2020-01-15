@@ -7,28 +7,23 @@ service:
   healthCheck:
     ttl: 20
 config:
-  key: nestcloud-starter-service-config
+  name: nestcloud-starter-service-config
 loadbalance:
-  # Supports:
-  # RandomRule
-  # RoundRobinRule
-  # WeightedResponseTimeRule
-  ruleCls: RandomRule
-  rules:
-    - service: your-service-name
-      ruleCls: RoundRobinRule
+  rule: RandomRule
+  services:
+    - name: your-service-name
+      rule: RoundRobinRule
 proxy:
   routes:
     - id: user
-      # self
       uri: lb://nestcloud-starter-service
       filters:
-        - name: AddRequestHeaderFilter
+        - name: RequestHeaderFilter
           parameters:
-            test-header: test1213123123
-        - name: AddResponseHeaderFilter
+            test-header: test
+        - name: ResponseHeaderFilter
           parameters:
-            response-header: 123123hello
+            response-header: hello
     - id: article
       uri: https://api.apiopen.top/recommendPoetry
 logger:

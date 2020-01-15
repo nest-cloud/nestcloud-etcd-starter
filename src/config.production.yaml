@@ -7,7 +7,7 @@ service:
   healthCheck:
     ttl: 20
 config:
-  key: nestcloud-starter-service-config
+  name: nestcloud-starter-service-config
 proxy:
   routes:
     - id: user
