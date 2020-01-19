@@ -1,11 +1,12 @@
-import { Injectable, Logger } from '@nestjs/common';
-import { NestSchedule, Interval } from '@nestcloud/schedule';
+import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
+import { Interval } from '@nestcloud/schedule';
 import { InjectLogger } from '@nestcloud/logger';
 import { BootValue } from '@nestcloud/boot';
 import { ConfigValue } from '@nestcloud/config';
+import { Schedule } from '@nestcloud/schedule';
 
 @Injectable()
-export class ScheduleService extends NestSchedule {
+export class ScheduleService implements OnModuleInit {
   @BootValue('custom.data', 'default custom data')
   private readonly customData: string;
 
@@ -16,8 +17,14 @@ export class ScheduleService extends NestSchedule {
 
   public constructor(
     @InjectLogger() private readonly logger: Logger,
+    private schedule: Schedule,
   ) {
-    super();
+  }
+
+  onModuleInit(): any {
+    this.schedule.createTimeoutJob(() => {
+      this.logger.log('execute timeout job');
+    }, 3000);
   }
 
   @Interval(2000)
