@@ -4,9 +4,6 @@ import { NestLogger } from '@nestcloud/logger';
 import { BOOT, IBoot } from '@nestcloud/common';
 import { resolve } from 'path';
 
-// https
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     logger: new NestLogger({
@@ -28,7 +25,7 @@ async function bootstrap() {
   });
 
   const boot = app.get<IBoot>(BOOT);
-  await app.listen(boot.get('service.port', 8081));
+  await app.listen(boot.get('service.port', 3000));
 }
 
 bootstrap();

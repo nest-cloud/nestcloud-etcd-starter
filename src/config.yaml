@@ -1,37 +1,34 @@
 etcd:
   hosts: localhost:2379
 service:
-  id: null
   name: nestcloud-starter-service
-  port: 8081
+  port: 3000
   healthCheck:
     ttl: 20
 config:
-  name: nestcloud-starter-service-config
+  name: ${{ service.name }}-config
 loadbalance:
   rule: RandomRule
   services:
-    - name: your-service-name
-      rule: RoundRobinRule
+    - name: nestcloud-starter-service
+      rule: CustomLoadbalanceRule
 proxy:
   routes:
-    - id: user
-      uri: lb://nestcloud-starter-service
+    - id: starter
+      uri: lb://${{ service.name }}
       filters:
-        - name: RequestHeaderFilter
+        - name: CustomProxyFilter
           parameters:
             test-header: test
         - name: ResponseHeaderFilter
           parameters:
-            response-header: hello
-    - id: article
-      uri: https://api.apiopen.top/recommendPoetry
+            custom-data: hello-world
+    - id: github
+      uri: https://api.github.com
 logger:
   level: info
   transports:
     - transport: console
       colorize: true
       datePattern: YYYY-MM-DD h:mm:ss
-      label: nestcloud-user-service
-custom:
-  data: test
+      label: ${{ service.name }}
