@@ -13,7 +13,7 @@ import * as controllers from './controllers';
 import * as services from './services';
 import * as clients from './clients';
 import * as proxyFilters from './proxy-filters';
-import * as lbRules from './lb-rules';
+import * as registrars from './registrars';
 import { LoggerModule } from '@nestcloud/logger';
 import { resolve } from 'path';
 
@@ -37,7 +37,7 @@ import { resolve } from 'path';
     }),
   ],
   controllers: components(controllers),
-  providers: components(services, clients, proxyFilters, lbRules),
+  providers: components(services, clients, proxyFilters, registrars),
 })
 export class AppModule {
 }
